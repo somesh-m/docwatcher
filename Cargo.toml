@@ -1,0 +1,22 @@
+[package]
+name = "docwatcher"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4.45"
+html-escape = "0.3.0"
+notify = "8.2.1"
+reqwest = { version = "0.13.5", features = ["json", "query"] }
+rig = { version = "0.46.0", features = ["qdrant"] }
+schemars = "1.2.3"
+scraper = "0.29.0"
+serde = { version = "1.0.229", features = ["derive"] }
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread"] }
+notify-debouncer-full = "0.6"
+qdrant-client = "1"
+blake3 = "1.8.7"
+anyhow = "1.0.104"
+thiserror = "2.0.21"
+testcontainers = "0.28.0"
+memcache = "0.21.0"
